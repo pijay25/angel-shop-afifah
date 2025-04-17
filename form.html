@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Pendaftaran Member Angel Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Form Pendaftaran Member Angel Shop</h2>
+  
+  <form id="formMember">
+    <label for="nohp">No HP:</label><br>
+    <input type="text" id="nohp" name="nohp" required><br>
+
+    <label for="nama">Nama:</label><br>
+    <input type="text" id="nama" name="nama" required><br>
+
+    <label for="alamat">Alamat:</label><br>
+    <textarea id="alamat" name="alamat" required></textarea><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="jk">Jenis Kelamin:</label><br>
+    <select id="jk" name="jk" required>
+      <option value="">-- Pilih --</option>
+      <option value="Laki-Laki">Laki-Laki</option>
+      <option value="Perempuan">Perempuan</option>
+    </select><br>
+
+    <label for="umur">Umur:</label><br>
+    <input type="number" id="umur" name="umur" required><br>
+
+    <label for="status">Status:</label><br>
+    <input type="text" id="status" name="status" required><br><br>
+
+    <button type="button" onclick="kirimForm()">Daftar</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
